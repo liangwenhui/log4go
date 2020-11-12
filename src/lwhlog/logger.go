@@ -40,5 +40,8 @@ func NewLog(c LogConfig) *Logger {
 
 func (l *Logger) Infof(format string, args ...interface{}) {
 	q := l.Queue
+	//a :=qevent.AccessEvent{format, args}
+	//b:=qevent.AccessEvent{format, args}
+	//a=b
 	q <- qevent.AccessEvent{format, args}
 }

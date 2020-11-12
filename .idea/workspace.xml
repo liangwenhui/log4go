@@ -16,25 +16,23 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a40aa89-4777-4fba-9963-a83041077c50" name="Default Changelist" comment="add">
-      <change afterPath="$PROJECT_DIR$/log4go.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QueueEvent/AccessEvent.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QueueEvent/HandleEvent.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lwhcontext/Log4goContext.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lwhlog/asyncFile.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lwhlog/asyncWriter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lwhlog/logger.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/queue/AccessQueue.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/queue/HandleQueue.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/testData.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/testFprint" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/testlog.go" afterDir="false" />
+    <list default="true" id="3a40aa89-4777-4fba-9963-a83041077c50" name="Default Changelist" comment="1">
+      <change afterPath="$PROJECT_DIR$/src/lwh_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/testFprint.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testFprint.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwhcontext/Log4goContext.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwhcontext/Log4goContext.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwhlog/asyncFile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwhlog/asyncFile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwhlog/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwhlog/logger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/queue/AccessQueue.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/queue/AccessQueue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/testlog.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testlog.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +75,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/QueueEvent" />
-    <property name="settings.editor.selected.configurable" value="go.sdk" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -90,6 +88,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build test">
+    <configuration name="go build src/" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="log4go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$/src" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="log4go" />
       <working_directory value="$PROJECT_DIR$" />
@@ -120,10 +125,12 @@
       <item itemvalue="Go Build.go build test" />
       <item itemvalue="Go Build.go build testFprint.go" />
       <item itemvalue="Go Build.go build test2" />
+      <item itemvalue="Go Build.go build src/" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build test" />
+        <item itemvalue="Go Build.go build src/" />
         <item itemvalue="Go Build.go build test2" />
         <item itemvalue="Go Build.go build testFprint.go" />
       </list>
@@ -138,7 +145,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -148,68 +167,88 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add" />
-    <option name="LAST_COMMIT_MESSAGE" value="add" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="72" width="1089" height="733" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605165103471">
+    <state x="223" y="72" width="1089" height="733" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605166191481">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="223" y="72" width="1089" height="733" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1605165103471" />
+    <state x="223" y="72" width="1089" height="733" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1605166191481" />
     <state x="505" y="218" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605164738493">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="505" y="218" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1605164738493" />
-    <state x="366" y="134" key="#xdebugger.evaluate" timestamp="1605099380014">
+    <state x="630" y="149" key="#xdebugger.evaluate" timestamp="1605167919255">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="366" y="134" key="#xdebugger.evaluate/0.0.1536.834@0.0.1536.834" timestamp="1605099380014" />
+    <state x="630" y="149" key="#xdebugger.evaluate/0.0.1536.834@0.0.1536.834" timestamp="1605167919255" />
     <state width="608" height="466" key="DebuggerActiveHint" timestamp="1605103157261">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="608" height="466" key="DebuggerActiveHint/0.0.1536.834@0.0.1536.834" timestamp="1605103157261" />
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1605085145143">
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1605166203190">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1605085145143" />
-    <state width="1493" height="205" key="GridCell.Tab.0.bottom" timestamp="1605165267828">
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1605166203190" />
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom" timestamp="1605168438500">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605165267828" />
-    <state width="1493" height="205" key="GridCell.Tab.0.center" timestamp="1605165267827">
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605168438500" />
+    <state width="1493" height="205" key="GridCell.Tab.0.center" timestamp="1605168438500">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1605165267827" />
-    <state width="1493" height="205" key="GridCell.Tab.0.left" timestamp="1605165267827">
+    <state width="1493" height="205" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1605168438500" />
+    <state width="1493" height="205" key="GridCell.Tab.0.left" timestamp="1605168438500">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1605165267827" />
-    <state width="1493" height="205" key="GridCell.Tab.0.right" timestamp="1605165267828">
+    <state width="1493" height="205" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1605168438500" />
+    <state width="1493" height="205" key="GridCell.Tab.0.right" timestamp="1605168438500">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1605165267828" />
-    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1605163998332">
+    <state width="1493" height="205" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1605168438500" />
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1605167924512">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605163998332" />
-    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1605163998332">
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605167924512" />
+    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1605167924512">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1605163998332" />
-    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1605163998331">
+    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1605167924512" />
+    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1605167924512">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1605163998331" />
-    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1605163998332">
+    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1605167924512" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1605167924512">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1605163998332" />
-    <state x="270" y="62" key="SettingsEditor" timestamp="1605160314282">
+    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1605167924512" />
+    <state x="563" y="119" key="RollbackChangesDialog" timestamp="1605167012669">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="270" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1605160314282" />
+    <state x="563" y="119" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1605167012669" />
+    <state x="270" y="62" key="SettingsEditor" timestamp="1605166207780">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="270" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1605166207780" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1605166706547">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605166706547" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605084171648">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605084171648" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/lwhlog/logger.go</url>
+          <line>45</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

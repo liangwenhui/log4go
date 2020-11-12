@@ -41,9 +41,11 @@ func main() {
 	for j := 0; j < iLoopTimes; j++ {
 		for i := j; i < test_times; i++ {
 			log.Infof("INTERGET:%d|STRING:%s|FLOAT:%f\n", AiRandomInt[i], AsRandomStr[i], AfRandomFloat[i])
+			//log.Infof("INTERGETININTERGETINTERGETINTERGETTERGETINTERGETINTERGETINTERGETINTERGET:%d|STRING:%s|FLOAT:%f\\n", AiRandomInt[i])
 		}
 		for i := test_times - 1; i > j; i-- {
 			log.Infof("INTERGET:%d|STRING:%s|FLOAT:%f\n", AiRandomInt[i], AsRandomStr[i], AfRandomFloat[i])
+			//log.Infof("INTERGETINTERGETINTERGETINTERGETINTERGETINTERGETINTERGETINTERGETINTERGET:%d|STRING:%s|FLOAT:%f\\n", AiRandomInt[i])
 		}
 		//for i := j; i < test_times; i++ {
 		//	log.Infof( "INTERGET:%d|STRING:%s|FLOAT:%f\n", i, "awsadsadwsadawsadawsadsadwsadsadwsadawsadsadwsadawsadsadwsad", 3121.21212)

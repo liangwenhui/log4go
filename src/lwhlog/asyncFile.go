@@ -97,6 +97,12 @@ func (append *AsyncFileAppend) send() {
 }
 
 func format(format string, arg interface{}) string {
+	if arg == nil {
+		return format
+	}
+	if len(arg.([]interface{})) == 0 {
+		return format
+	}
 	args := arg.([]interface{})
 	for i := 0; i < len(args); i++ {
 		switch args[i].(type) {
