@@ -25,14 +25,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a40aa89-4777-4fba-9963-a83041077c50" name="Default Changelist" comment="1">
-      <change afterPath="$PROJECT_DIR$/src/lwh_log" afterDir="false" />
+    <list default="true" id="3a40aa89-4777-4fba-9963-a83041077c50" name="Default Changelist" comment="优化（还能继续优化，重复使用对象，帮助GC）">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwhcontext/Log4goContext.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwhcontext/Log4goContext.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueueEvent/AccessEvent.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/QueueEvent/AccessEvent.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwhlog/asyncFile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwhlog/asyncFile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwhlog/asyncWriter.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwhlog/asyncWriter.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwhlog/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwhlog/logger.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/queue/AccessQueue.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/queue/AccessQueue.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/testlog.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testlog.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +166,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="优化（还能继续优化，重复使用对象，帮助GC）" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化（还能继续优化，重复使用对象，帮助GC）" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="72" width="1089" height="733" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605166191481">
@@ -179,50 +178,50 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="505" y="218" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1605164738493" />
-    <state x="630" y="149" key="#xdebugger.evaluate" timestamp="1605167919255">
+    <state x="913" y="123" key="#xdebugger.evaluate" timestamp="1605411593894">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="630" y="149" key="#xdebugger.evaluate/0.0.1536.834@0.0.1536.834" timestamp="1605167919255" />
-    <state width="608" height="466" key="DebuggerActiveHint" timestamp="1605103157261">
+    <state x="913" y="123" key="#xdebugger.evaluate/0.0.1536.834@0.0.1536.834" timestamp="1605411593894" />
+    <state width="608" height="466" key="DebuggerActiveHint" timestamp="1605409884130">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="608" height="466" key="DebuggerActiveHint/0.0.1536.834@0.0.1536.834" timestamp="1605103157261" />
+    <state width="608" height="466" key="DebuggerActiveHint/0.0.1536.834@0.0.1536.834" timestamp="1605409884130" />
     <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1605166203190">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1605166203190" />
-    <state width="1493" height="205" key="GridCell.Tab.0.bottom" timestamp="1605168438500">
+    <state width="1493" height="313" key="GridCell.Tab.0.bottom" timestamp="1605412638871">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605168438500" />
-    <state width="1493" height="205" key="GridCell.Tab.0.center" timestamp="1605168438500">
+    <state width="1493" height="313" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605412638871" />
+    <state width="1493" height="313" key="GridCell.Tab.0.center" timestamp="1605412638871">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1605168438500" />
-    <state width="1493" height="205" key="GridCell.Tab.0.left" timestamp="1605168438500">
+    <state width="1493" height="313" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1605412638871" />
+    <state width="1493" height="313" key="GridCell.Tab.0.left" timestamp="1605412638870">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1605168438500" />
-    <state width="1493" height="205" key="GridCell.Tab.0.right" timestamp="1605168438500">
+    <state width="1493" height="313" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1605412638870" />
+    <state width="1493" height="313" key="GridCell.Tab.0.right" timestamp="1605412638871">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1605168438500" />
-    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1605167924512">
+    <state width="1493" height="313" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1605412638871" />
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1605412308316">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605167924512" />
-    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1605167924512">
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605412308316" />
+    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1605412308316">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1605167924512" />
-    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1605167924512">
+    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1605412308316" />
+    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1605412308316">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1605167924512" />
-    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1605167924512">
+    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1605412308316" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1605412308316">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1605167924512" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1605412308316" />
     <state x="563" y="119" key="RollbackChangesDialog" timestamp="1605167012669">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -231,10 +230,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1605166207780" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1605166706547">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1605169987138">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605166706547" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605169987138" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605084171648">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -244,9 +243,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/src/lwhlog/logger.go</url>
-          <line>45</line>
-          <option name="timeStamp" value="36" />
+          <url>file://$PROJECT_DIR$/src/lwhlog/asyncFile.go</url>
+          <line>105</line>
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

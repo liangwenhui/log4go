@@ -28,7 +28,7 @@ func NewLog(c LogConfig) *Logger {
 	aqueue := context.AccessQueue
 	hqueue := context.HandleQueue
 
-	fileAppend := NewAsyncFileAppend(aqueue.Queue, hqueue.Queue)
+	fileAppend := NewAsyncFileAppend(aqueue.Queue, hqueue.Queue, c.FilePath)
 	l := &Logger{
 		queueSize: c.QueueSize,
 		fileName:  c.FilePath,
@@ -38,10 +38,14 @@ func NewLog(c LogConfig) *Logger {
 	return l
 }
 
+//var argss = []interface{}{1,"ssssssss",float64(3.2)}
+//var ev = qevent.AccessEvent{}
+
 func (l *Logger) Infof(format string, args ...interface{}) {
-	q := l.Queue
-	//a :=qevent.AccessEvent{format, args}
-	//b:=qevent.AccessEvent{format, args}
-	//a=b
-	q <- qevent.AccessEvent{format, args}
+	ev := qevent.AccessEvent{Format: format, Args: args}
+	l.Queue <- ev //qevent.AccessEvent{format, args}
+
+	//ev.Format = format
+	//ev.Args = args
+	//l.Queue <- ev
 }

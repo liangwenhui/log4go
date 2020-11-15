@@ -11,11 +11,13 @@ type AsyncWriter struct {
 	File *os.File
 }
 
-func NewAsyncWriter() *AsyncWriter {
+func NewAsyncWriter(filePath string) *AsyncWriter {
 	writer := &AsyncWriter{HC: lwhcontext.HandleQueue.Queue}
-	f, _ := os.OpenFile("./log4go.log", os.O_CREATE|os.O_RDWR, 0766)
+	f, _ := os.OpenFile(filePath, os.O_CREATE|os.O_RDWR, 0766)
 	writer.File = f
 	go writer.loopHandle()
+	go writer.loopHandle()
+	//go writer.loopHandle()
 	return writer
 }
 

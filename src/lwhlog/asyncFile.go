@@ -24,7 +24,7 @@ type AsyncFileAppend struct {
 	//file *os.File
 }
 
-func NewAsyncFileAppend(c chan QueueEvent.AccessEvent, c2 chan QueueEvent.HandleEvent) *AsyncFileAppend {
+func NewAsyncFileAppend(c chan QueueEvent.AccessEvent, c2 chan QueueEvent.HandleEvent, filePath string) *AsyncFileAppend {
 	inst := &AsyncFileAppend{AC: c, HC: c2}
 	inst.buffersize = 2048 * 4
 	//pLogFile, _ := os.OpenFile("./log4go.log", os.O_CREATE|os.O_RDWR, 0766)
@@ -34,7 +34,7 @@ func NewAsyncFileAppend(c chan QueueEvent.AccessEvent, c2 chan QueueEvent.Handle
 	inst.index = 0
 	inst.lastSendTime = time.Now()
 	inst.maxWait = 200
-	NewAsyncWriter()
+	NewAsyncWriter(filePath)
 	go inst.loopHandle()
 	go inst.loopCheck()
 	return inst
@@ -96,14 +96,14 @@ func (append *AsyncFileAppend) send() {
 	}
 }
 
-func format(format string, arg interface{}) string {
-	if arg == nil {
+func format(format string, args []interface{}) string {
+	if args == nil {
 		return format
 	}
-	if len(arg.([]interface{})) == 0 {
+	if len(args) == 0 {
 		return format
 	}
-	args := arg.([]interface{})
+	//args := arg.([]interface{})
 	for i := 0; i < len(args); i++ {
 		switch args[i].(type) {
 		case string:
